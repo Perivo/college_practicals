@@ -28,7 +28,7 @@ Step 2: Clone the Repository
 Clone the repository into your XAMPP htdocs directory.
 
 
-git clone https://github.com/yourusername/php-sessions-cookies-database.git
+git clone https://github.com/Perivo/college-practicals.git
 On Windows, the typical location for htdocs is:
 
 
