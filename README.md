@@ -158,8 +158,8 @@ If you have any suggestions, improvements, or feedback, don't hesitate to reach 
 
 ## Contact & Links
 
-- **GitHub**: [Your GitHub Profile](https://github.com/perivo)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/ivo-pereira-ix3)
+- **GitHub**: [perivo](https://github.com/perivo)
+- **LinkedIn**: [Ivo Pereira](https://www.linkedin.com/in/ivo-pereira-ix3)
 - **Email**: ivopereiraix3@gmail.com
 
 - 
