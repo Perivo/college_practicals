@@ -1,139 +1,168 @@
-PHP Sessions, Cookies, and Database Operations
-Overview
-This project demonstrates simple PHP scripts for:
+# College Practical Projects Repository
 
-Storing and retrieving session data.
-Storing and retrieving cookie data.
-Basic file handling in PHP.
-Working with MySQL databases (storing and retrieving records).
-The project is intended to be run locally using XAMPP, which provides a local development environment for PHP and MySQL.
+This repository contains a series of **Java** and **PHP** practical projects designed to demonstrate various programming concepts. Each folder represents a different project that tackles a specific problem or demonstrates the use of a particular programming technique.
 
-Features
-Session Management: Set, retrieve, and destroy session data using PHP.
-Cookie Management: Set and retrieve cookies using PHP.
-Database Operations: Store and retrieve user data in a MySQL database using PHP and MySQLi.
-File Handling: Simple scripts for reading and writing to text files using PHP.
-Requirements
-To run this project locally, you need the following software:
+## Table of Contents
 
-XAMPP (includes Apache, MySQL, PHP)
-Download XAMPP
-A web browser (Chrome, Firefox, etc.)
-Project Setup
-Step 1: Install XAMPP
-Download and install XAMPP for your operating system from here.
-During installation, select Apache and MySQL components.
-After installation, open the XAMPP Control Panel and start the Apache and MySQL services.
-Step 2: Clone the Repository
-Clone the repository into your XAMPP htdocs directory.
+- [Java Projects](#java-projects)
+- [PHP Projects](#php-projects)
+- [How to Run](#how-to-run)
+- [Prerequisites](#prerequisites)
+- [License](#license)
+
+---
+
+## Java Projects
+
+The **Java** folder contains projects that cover topics such as GUI design, OOP concepts, mathematical operations, and more.
+
+### Project Structure
+
+├───Accept integer values for a, b and c which are coefficients of quadratic equation ├───Accept n strings. Sort names in ascending order ├───Accept two n x m matrices. Write a Java program to find addition of these ├───Accept two values from user and perform addition of two numbers ├───Animals ├───Create a package Animals ├───Demonstrate creating your own exception in Java ├───Demonstrate Java inheritance using extends keyword ├───Demonstrate method overloading and method overriding in Java ├───Design Notepad application using AWT components ├───Design simple calculator GUI application using AWT components ├───Using various AWT components design Java application to accept a student's Registration formResume Builder (Digital form) └───Write a Java List example and demonstrate methods of Java List interface
 
 
-git clone https://github.com/Perivo/college-practicals.git
-On Windows, the typical location for htdocs is:
+### Java Projects Description
+
+1. **Accept integer values for a, b, and c (Quadratic Equation)**:
+   - This project accepts coefficients of a quadratic equation from the user and calculates the roots.
+  
+2. **Accept n strings and sort them in ascending order**:
+   - A simple program to accept multiple strings from the user, sort them, and display them in ascending order.
+  
+3. **Matrix Addition**:
+   - Accepts two `n x m` matrices from the user and performs matrix addition.
+
+4. **Addition of Two Numbers**:
+   - Accepts two values from the user and calculates their sum.
+
+5. **Animals Package**:
+   - Demonstrates the use of a custom package, `Animals`, where an interface `Animal` is implemented by a `Dog` class.
+
+6. **Custom Exception Handling**:
+   - Demonstrates how to create and handle your own exceptions in Java.
+
+7. **Java Inheritance (extends keyword)**:
+   - Showcases inheritance using the `extends` keyword, with a practical example.
+
+8. **Method Overloading and Method Overriding**:
+   - Demonstrates both method overloading and overriding concepts.
+
+9. **Notepad Application using AWT**:
+   - A simple Notepad GUI application designed using AWT components.
+
+10. **Simple Calculator using AWT**:
+    - A basic calculator GUI that allows users to perform arithmetic operations using AWT components.
+
+11. **Student Registration Form (Resume Builder)**:
+    - Using AWT components, a digital form is designed to accept student registration details.
+
+12. **Java List Example**:
+    - Demonstrates the methods of Java List Interface, including insertion, deletion, and iteration.
+
+---
+
+## PHP Projects
+
+The **PHP** folder contains projects covering topics such as session management, cookies, file handling, arrays, and mathematical operations like factorial and Fibonacci.
+
+### Project Structure
+
+└───php ├───Calculating Factorial ├───Displaying Prime Numbers in a Given Range ├───Evaluating Expressions ├───Finding Fibonacci Series ├───Retrieve Records ├───Retrieving Data from HTML Forms ├───Reverse of a Number ├───Storing and Retrieving Cookies ├───Storing and Retrieving Sessions ├───Storing Records ├───Working with Arrays └───Working with Files (Reading/Writing)
 
 
-C:\xampp\htdocs\
-For macOS/Linux:
 
+### PHP Projects Description
 
-/Applications/XAMPP/htdocs/
-After cloning, your project folder should be located at:
+1. **Calculating Factorial**:
+   - This script calculates the factorial of a number provided by the user.
 
+2. **Displaying Prime Numbers in a Given Range**:
+   - Accepts a range from the user and displays all prime numbers within that range.
 
-C:\xampp\htdocs\php-sessions-cookies-database\
-Step 3: Create the Database (Optional)
-To use the database-related scripts, follow these steps:
+3. **Evaluating Expressions**:
+   - Evaluates basic arithmetic expressions input by the user.
 
-Open your browser and go to http://localhost/phpmyadmin/.
+4. **Finding Fibonacci Series**:
+   - Displays the Fibonacci series up to a specified number.
 
-Create a new database named my_database.
+5. **Retrieve Records**:
+   - Retrieves records from a MySQL database.
 
-Run the following SQL query in phpMyAdmin to create the users table:
+6. **Retrieving Data from HTML Forms**:
+   - Demonstrates how to capture data from HTML forms using PHP.
 
+7. **Reverse of a Number**:
+   - Reverses a number input by the user.
 
-CREATE DATABASE my_database;
+8. **Storing and Retrieving Cookies**:
+   - A demonstration of storing cookies and retrieving their values.
 
-USE my_database;
+9. **Storing and Retrieving Sessions**:
+   - Stores session data and retrieves it for the current user session.
 
-CREATE TABLE users (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-Step 4: Configure PHP Sessions and Cookies (Optional)
-Open the XAMPP Control Panel.
+10. **Storing Records**:
+    - Stores user data into a MySQL database using PHP.
 
-Click on Config next to Apache and select php.ini.
+11. **Working with Arrays**:
+    - A series of array manipulations, including sorting, searching, and other operations.
 
-Make sure the following line is configured correctly for session storage:
+12. **Working with Files (Reading/Writing)**:
+    - A simple PHP script that reads data from and writes data to a text file.
 
+---
 
-session.save_path = "C:\xampp\tmp"
-Save and close the file, then restart Apache in the XAMPP Control Panel.
+## How to Run
 
-Running the Project
-Running the Session and Cookie Scripts
-Open your browser and go to:
+### Java Projects
 
-For setting session: http://localhost/php-sessions-cookies-database/store_session.php
-For retrieving session: http://localhost/php-sessions-cookies-database/retrieve_session.php
-For destroying session: http://localhost/php-sessions-cookies-database/destroy_session.php
-For cookies:
+1. **Compile and Run Java Programs**:
+   - Navigate to the project directory using the terminal or command line.
+   - Compile the `.java` files using:
+     ```bash
+     javac FileName.java
+     ```
+   - Run the program using:
+     ```bash
+     java FileName
+     ```
 
-For setting cookies: http://localhost/php-sessions-cookies-database/store_cookie.php
-For retrieving cookies: http://localhost/php-sessions-cookies-database/retrieve_cookie.php
-Running the Database Scripts
-Store a record: Open the form and submit user data at: http://localhost/php-sessions-cookies-database/store_record.php
+### PHP Projects
 
-Retrieve records: View the stored records at: http://localhost/php-sessions-cookies-database/retrieve_records.php
+1. **Set Up XAMPP**:
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) to set up a local PHP development environment.
+   - Place your PHP project in the `htdocs` folder of your XAMPP installation.
+     ```
+     C:\xampp\htdocs\php-project-folder
+     ```
 
-File Handling Scripts
-Writing to a file: Use the form to write content to a file: http://localhost/php-sessions-cookies-database/file_operations.php
+2. **Start Apache**:
+   - Open the XAMPP Control Panel and start the Apache server.
 
-Reading from a file: View the contents of the file: http://localhost/php-sessions-cookies-database/file_operations.php (submit form with GET request).
+3. **Access the Project via Browser**:
+   - Navigate to the PHP scripts using your web browser:
+     ```
+     http://localhost/php-project-folder/script.php
+     ```
 
-Project Structure
+### Prerequisites
 
-php-sessions-cookies-database/
-│
-├── store_session.php         # Script to store session data
-├── retrieve_session.php      # Script to retrieve session data
-├── destroy_session.php       # Script to destroy session data
-│
-├── store_cookie.php          # Script to store cookie data
-├── retrieve_cookie.php       # Script to retrieve cookie data
-│
-├── store_record.php          # Script to store data into MySQL database
-├── retrieve_records.php      # Script to retrieve data from MySQL database
-│
-├── file_operations.php       # Script for reading and writing files
-│
-└── README.md                 # This README file
-Troubleshooting
-XAMPP Control Panel Issues:
+- **Java Projects**: JDK (Java Development Kit) must be installed.
+- **PHP Projects**: XAMPP or another local PHP development environment.
 
-Ensure Apache and MySQL are running.
-If ports are blocked, change the port number for Apache in the XAMPP Control Panel (Config -> Service and Port Settings -> Apache).
-Database Connection Errors:
+---
+Thank you for visiting this repository! These projects have been an amazing learning experience for me, and I hope they serve as a useful resource for anyone exploring Java and PHP programming. Feel free to explore the projects, clone them, and experiment with the code!
 
-Make sure that your database credentials in the scripts are correct. Modify store_record.php as needed:
+If you have any suggestions, improvements, or feedback, don't hesitate to reach out. I'm always eager to learn more and improve my skills. Happy coding!
 
+---
 
-$servername = "localhost";
-$username = "root";
-$password = "";          // Default password is empty for XAMPP
-$dbname = "my_database"; // Your database name
-PHP Errors:
+## Contact & Links
 
-If you are getting PHP errors, make sure error reporting is enabled in php.ini:
+- **GitHub**: [Your GitHub Profile](https://github.com/perivo)
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/ivo-pereira-ix3)
+- **Email**: ivopereiraix3@gmail.com
 
+- 
+## License
 
-error_reporting = E_ALL;
-display_errors = On;
-Restart Apache after modifying php.ini.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-This README file provides comprehensive setup instructions, how to run the project, and troubleshooting tips for your PHP project using XAMPP.
+This repository is licensed under the MIT License. See the `LICENSE` file for details.
